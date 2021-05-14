@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Mi app de meditación</title>
+</head>
+
+<body>
+  <div>
+    <h1>Es hora de meditar</h1>
+  </div>
+
+  <!--  Video de fondo -->
+  <div class="video-container">
+    <video loop>
+      <source src="./assets/media/rain.mp4" type="video.mp4">
+    </video>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="controls-container" style="
+  position: fixed;
+  top:0;
+  background-color:rgba(255,255,255,0.4);
+  padding: 6rem 4rem;
+  left:28%;">
+
+    <!-- Botonera selector de tiempo -->
+    <div class="time-select">
+      <!--       el data time nos permitirá saber la duración de cada boton -->
+      <button value="60">1 minuto</button>
+      <button value="300">5 minuto</button>
+      <button value="600">10 minuto</button>
+    </div>
+
+    <!-- Circulo cuenta atrás, play/pause -->
+    <div class="player-container">
+      <!-- Icono PLAY / PAUSE -->
+      <img class="play" style=" width: 50px; margin: 4rem;" src="assets/icon/play-button.svg" alt="play">
+      <!-- Cícurlo -->
+      <svg height="400" width="400">
+        <circle cx="200" cy="200" r="150" stroke="black" stroke-width="3" fill="none" />
+      </svg>
+    </div>
+
+    <!-- Time Display -->
+    <div class="time-display">
+      0:00
+    </div>
+
+
+
+    <!-- Botonera de tipo de meditación (lluvia/playa) -->
+    <div class="meditation-select">
+      <button>Lluvia</button>
+      <button>Olas</button>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
